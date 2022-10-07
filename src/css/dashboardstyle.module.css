@@ -7,25 +7,19 @@
 }
 
 .background {
-    background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);
+    /* background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);
     width: 100%;
     height: 100%;
     background-position: center;
     position: absolute;
-    z-index: -1;
+    z-index: -1; */
 }
 
-.mainText {
+h2 {
+    padding: 30px;
     text-align: center;
-    color: rgb(89, 95, 100);
-    position: relative;
-    top: 30%;
 }
 
-.logo {
-    content: url('../../src/assets/images/by_my_car.svg');
-    padding-top: 50px;
-    margin: auto;
-    width: 30%;
-    height: auto;
+.table {
+    margin: 1em 2em;
 }

@@ -3,7 +3,7 @@
     margin: 0;
     box-sizing: inherit;
     /* border: 1px solid red; */
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .navbar {
@@ -21,6 +21,7 @@
 .links {
     width: 100%;
     align-items: center;
+    font-size: 1.2em;
 }
 
 ul {
@@ -30,4 +31,8 @@ ul {
     padding-left: 15px;
     padding-right: 15px;
     justify-content: space-around;
+}
+
+li:hover{
+    background-color: lightgrey;
 }

@@ -11,6 +11,9 @@ export const Navbar = () => {
                         <Link href="/" underline="hover" color="success">Home</Link>
                     </li>
                     <li>
+                        <Link href="/Dashboard" underline="hover" color="success">Dashboard</Link>
+                    </li>
+                    <li>
                         <Link href="/About" underline="hover" color="success">About</Link>
                     </li>
                     <li>
