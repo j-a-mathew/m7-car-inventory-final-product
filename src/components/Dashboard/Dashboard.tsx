@@ -8,7 +8,7 @@ export const Dashboard = () => {
         <div className={styles.background}>
             <Navbar />
             <div>
-                <h2>My Car Inventory Dashboard</h2>
+                <h2>Car Inventory Dashboard</h2>
                 <div className={styles.table}><DataTable></DataTable></div>
             </div>
         </div>

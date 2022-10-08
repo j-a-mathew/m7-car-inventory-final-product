@@ -1,26 +1,17 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import { server_calls } from '../api';
 
-export const FetchData = () => {
-    return (
-        null
-    )
-}
+export const useGetData = () => {
+    const [carData, setData] = useState<[]>([]);
 
+    async function handleDataFetch(){
+        const result = await server_calls.get();
+        setData(result)
+    }
 
-// import React, { useState, useEffect } from 'react';
-// import { server_calls } from '../api';
-
-// export const useGetData = () => {
-//     const [contactData, setData] = useState<[]>([]);
-
-//     async function handleDataFetch(){
-//         const result = await server_calls.get();
-//         setData(result)
-//     }
-
-//     useEffect( () => {
-//         handleDataFetch();
-//     }, [])
+    useEffect( () => {
+        handleDataFetch();
+    }, [])
     
-//     return {contactData, getData:handleDataFetch}
-// }
+    return {carData, getData:handleDataFetch}
+}
